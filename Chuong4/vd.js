@@ -36,20 +36,20 @@ document.write(arr.join()); */
 
 /* KIỂU CHUỖI */
 
-/*//KHAI BÁO
-var str = "Khai báo biến và gắn giá trị cho biến";
+//KHAI BÁO
+/*var str = "Khai báo biến và gắn giá trị cho biến";
 //cách 2 khai báo dạng đối tượng
 var objstr = new String("Khai báo dạng đối tượng");
 document.write(str);
 
 
-//Các phương thức (hay hàm xử lý chuỗi)
+//Các phương thức 
 document.write(str.charAt(2));
 document.write(str.concat("<br> Gắn thêm chuỗi"));
-document.write(str.indexOf("a")); //kết quả là ?
-document.write("<br>", str.lastIndexOf("a")); //Tại sao ?
+document.write(str.indexOf("a")); 
+document.write("<br>", str.lastIndexOf("a")); 
 
-var str = "HẾT KẾ LẬP TRÌNH";
+var str = "THẾT KẾ LẬP TRÌNH";
 document.write("<br>", str.toLowerCase());
 document.write(str.toUpperCase(str));
 
@@ -57,7 +57,7 @@ document.write(str.toUpperCase(str));
 //cắt lấy 1 đoạn trong chuỗi str
 
 document.write("<br>", str.slice(5, 19));
-var str = "       HẾT       KẾ LẬP       TRÌNH       ";
+var str = " THIẾT KẾ LẬP TRÌNH       ";
 document.write("<br>", str, "Số ký tự là: ", str.length);
 
 //gọi hàm TRIM
