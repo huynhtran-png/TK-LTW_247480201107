@@ -1,0 +1,21 @@
+h2 {
+    color: red;
+    text-align: center;
+}
+
+
+.doan1{
+    font-family: "Times New Roman";
+    font-size: 14px;
+    color: white;
+    background-color:#12bac3;
+    font-style: italic;
+}
+.doan2{
+    font-family: "Times New Roman";
+    font-size: 14px;
+    color: yellow;
+    background-color:brown;
+    font-style: italic;
+}
+
