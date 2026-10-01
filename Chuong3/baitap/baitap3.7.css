@@ -1,0 +1,23 @@
+body {
+    font-family: Verdana;
+    font-size: 13px;
+}
+
+.khung {
+    width: 700px;
+    display: flex;
+    border: 1px solid black;
+}
+
+.menu {
+    width: 180px;
+    background-color: #333333;
+}
+
+
+
+.noidung {
+    width: 520px;
+    background-color: #d9e1e5;
+    padding: 10px;
+}

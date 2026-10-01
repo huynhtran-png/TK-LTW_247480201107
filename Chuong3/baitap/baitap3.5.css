@@ -1,0 +1,31 @@
+
+table{
+    border-collapse: collapse;
+
+ }
+.gachduoi{
+
+    border-bottom: 2px solid black;
+    padding-bottom : 5px;
+    display :inline-block;
+}
+.muc1{
+    font-family: Verdana;
+    color: black;
+    font-size: 13pt;
+}
+.muc2{
+    font-family: Tahoma;
+    color: black;
+    font-size: 13pt;
+}
+.muc3{
+    font-family: "Times New Roman";
+    color: black;
+    font-size: 13pt;
+}
+.Thitotnghiep{
+    font-family: "Verdana";
+    color: red;
+    font-size: 13pt;
+}
