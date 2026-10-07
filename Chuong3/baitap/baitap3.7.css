@@ -4,7 +4,7 @@ body {
 }
 
 .khung {
-    width: 700px;
+    width: 100%;
     display: flex;
     border: 1px solid black;
 }
@@ -13,11 +13,18 @@ body {
     width: 180px;
     background-color: #333333;
 }
-
-
-
+.menu a{
+    display: block;
+    color: while;
+    padding: 7px;
+    text-decoration: underline;
+}
 .noidung {
+    flex:1;
     width: 520px;
     background-color: #d9e1e5;
     padding: 10px;
+}
+.noidung h3{
+    margin-top: 0;
 }
