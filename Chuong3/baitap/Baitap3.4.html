@@ -1,33 +1,50 @@
 <!DOCTYPE html>
+<!-- Khai báo chuẩn HTML5 cho trình duyệt nhận biết -->
+
 <html lang="vi">
+<!-- Thẻ gốc bao bọc toàn bộ trang web. Thuộc tính lang="vi" xác định ngôn ngữ chính là tiếng Việt -->
+
 <head>
     <meta charset="UTF-8">
+    <!-- Khai báo bảng mã ký tự UTF-8 giúp hiển thị đúng tiếng Việt có dấu -->
+
     <title>Bài tập 3.4</title>
+    <!-- Tiêu đề của trang web (hiển thị trên thẻ/tab của trình duyệt) -->
 
+    <!-- Khối chứa các quy tắc định dạng giao diện bằng CSS -->
     <style>
-        table{
-            border-collapse: collapse;
-            font-family: "Times New Roman";
-            font-size: 14px;
-            font-weight: bold;
+        /* Định dạng chung cho toàn bộ bảng (<table>) */
+        table {
+            border-collapse: collapse;      /* Gộp các đường viền của ô lại làm một, tránh viền kép đôi */
+            font-family: "Times New Roman"; /* Phông chữ sử dụng: Times New Roman */
+            font-size: 14px;                /* Kích thước chữ: 14 pixel */
+            font-weight: bold;              /* Đặt độ đậm cho chữ: In đậm (Bold) */
         }
 
+        /* Định dạng chung cho các ô tiêu đề (<th>) và ô dữ liệu (<td>) */
         th, td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: center;
+            border: 1px solid black;  /* Đường viền bao quanh mỗi ô: dày 1px, nét liền (solid), màu đen */
+            padding: 10px;            /* Khoảng cách khoảng trống nội dung chữ bên trong ô tới viền ô: 10px */
+            text-align: center;       /* Căn chỉnh chữ ra chính giữa ô theo chiều ngang */
         }
 
+        /* Định dạng riêng cho các ô tiêu đề cột/dòng (<th>) */
         th {
-            background-color: #d9eaf7;
+            background-color: #d9eaf7; /* Màu nền ô tiêu đề: Màu xanh nhạt (mã Hex #d9eaf7) */
         }
     </style>
 </head>
 
 <body>
+    <!-- Khối thẻ chứa nội dung hiển thị trên trang web -->
 
     <table>
+    <!-- Khởi tạo bảng dữ liệu -->
+
+        <!-- ================= HÀNG 1: TIÊU ĐỀ CÁC THỨ TRONG TUẦN ================= -->
         <tr>
+        <!-- Thẻ tr (Table Row): Tạo hàng thứ nhất -->
+
             <th>Thứ/Buổi</th>
             <th>Hai</th>
             <th>Ba</th>
@@ -36,30 +53,40 @@
             <th>Sáu</th>
             <th>Bảy</th>
             <th>CN</th>
+            <!-- Thẻ th (Table Header): Các ô tiêu đề cột, nội dung mặc định in đậm và nằm giữa -->
         </tr>
 
+        <!-- ================= HÀNG 2: LỊCH HỌC BUỔI SÁNG ================= -->
         <tr>
-            <th>Sáng</th>
+        <!-- Tạo hàng thứ hai -->
+
+            <th>Sáng</th> <!-- Ô tiêu đề hàng: Xác định đây là lịch học buổi sáng -->
             <td>Toán</td>
             <td>Lý</td>
             <td>Hóa</td>
             <td>Toán</td>
             <td>Lý</td>
             <td>Hóa</td>
-            <td></td>
+            <td></td>     <!-- Ô dữ liệu trống đại diện cho Chủ Nhật sáng không học -->
+            <!-- Thẻ td (Table Data): Các ô dữ liệu thông thường trong bảng -->
         </tr>
 
+        <!-- ================= HÀNG 3: LỊCH HỌC BUỔI CHIỀU ================= -->
         <tr>
-            <th>Chiều</th>
+        <!-- Tạo hàng thứ ba -->
+
+            <th>Chiều</th> <!-- Ô tiêu đề hàng: Xác định đây là lịch học buổi chiều -->
             <td>Văn</td>
             <td>Sử</td>
             <td>Sinh</td>
             <td>Địa</td>
             <td>GDCD</td>
             <td>Anh</td>
-            <td></td>
+            <td></td>      <!-- Ô dữ liệu trống đại diện cho Chủ Nhật chiều không học -->
         </tr>
+
     </table>
+    <!-- Kết thúc bảng -->
 
 </body>
 </html>

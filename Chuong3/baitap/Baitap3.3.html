@@ -1,37 +1,70 @@
 <!DOCTYPE html>
+<!-- Khai báo chuẩn HTML5 cho trình duyệt nhận biết -->
+
 <html lang="vi">
+<!-- Thẻ gốc bao bọc toàn bộ trang web. Thuộc tính lang="vi" xác định ngôn ngữ chính là tiếng Việt -->
+
 <head>
     <meta charset="UTF-8">
+    <!-- Khai báo bảng mã ký tự UTF-8 giúp hiển thị đúng tiếng Việt có dấu -->
+
     <title>Bài tập 3.3</title>
+    <!-- Tiêu đề của trang web (hiển thị trên thẻ/tab của trình duyệt) -->
 </head>
 
 <body>
+    <!-- Khối thẻ chứa toàn bộ nội dung hiển thị trên trang web -->
+
+    <!-- Khối thẻ định dạng giao diện CSS -->
     <style>
-      table{
-            border: 3px solid black;
-            background-color: pink;
+        table {
+            border: 3px solid black;  /* Đường viền bảng: dày 3px, nét liền (solid), màu đen (black) */
+            background-color: pink;   /* Màu nền của toàn bộ bảng: Màu hồng (pink) */
         }
     </style>
 
     <table>
+    <!-- Thẻ tạo bảng -->
+
         <tr>
+        <!-- Thẻ tạo dòng (Table Row) trong bảng -->
+
             <td>
-    <h1 align =" center"
-    style="color:#12bac3">Các bài hát thiếu nhi hay nhất</h1>
-    
-    <ol>
-    
-        <li>Ai yêu Bác Hồ Chí Minh hơn chúng em nhi đồng - Phong Nhã</li>
-        <li>Bác Hồ người cho em tất cả - Hoàng Long, Hoàng Lân</li>
-        <li>Bàn tay mẹ - Bùi Đình Thảo, Tạ Hữu Yến</li>
-        <li>Bụi Phấn - Vũ Hoàng, Lê Văn Lộc</li>
-        <li>Ca ngợi Tổ quốc - Hoàng Vân</li>
-        <li>Chiếc đèn ông sao - Phạm Tuyên</li>
-        <li>Cho con - Phạm Trọng Cầu, Tuấn Dũng</li>
-        <li>Đàn đồng ca mùa hạ - Minh Châu, Nguyễn Minh Nguyên</li>
-    </ol>
-        </td>
-    </tr>
-</table>
+            <!-- Thẻ tạo ô dữ liệu (Table Data) trong dòng -->
+
+                <h1 align="center" style="color:#12bac3">
+                <!-- 
+                    Thẻ h1: Tiêu đề cấp 1 (chữ lớn nhất)
+                    align="center": Căn chỉnh tiêu đề ra giữa ô
+                    style="color:#12bac3": Thuộc tính CSS inline đặt màu chữ là màu xanh ngọc (mã Hex #12bac3)
+                -->
+                    Các bài hát thiếu nhi hay nhất
+                </h1>
+                
+                <ol>
+                <!-- Thẻ danh sách có thứ tự (Ordered List) - hiển thị bằng đánh số 1, 2, 3... -->
+
+                    <li>Ai yêu Bác Hồ Chí Minh hơn chúng em nhi đồng - Phong Nhã</li>
+                    <li>Bác Hồ người cho em tất cả - Hoàng Long, Hoàng Lân</li>
+                    <li>Bàn tay mẹ - Bùi Đình Thảo, Tạ Hữu Yến</li>
+                    <li>Bụi Phấn - Vũ Hoàng, Lê Văn Lộc</li>
+                    <li>Ca ngợi Tổ quốc - Hoàng Vân</li>
+                    <li>Chiếc đèn ông sao - Phạm Tuyên</li>
+                    <li>Cho con - Phạm Trọng Cầu, Tuấn Dũng</li>
+                    <li>Đàn đồng ca mùa hạ - Minh Châu, Nguyễn Minh Nguyên</li>
+                    <!-- Thẻ li (List Item): Mỗi thẻ đại diện cho 1 mục/dòng trong danh sách -->
+
+                </ol>
+                <!-- Kết thúc danh sách có thứ tự -->
+
+            </td>
+            <!-- Kết thúc ô dữ liệu -->
+
+        </tr>
+        <!-- Kết thúc dòng trong bảng -->
+
+    </table>
+    <!-- Kết thúc bảng -->
+
 </body>
 </html>

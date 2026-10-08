@@ -1,34 +1,48 @@
-<!DOCTYPE html>
-<html lang="vi">
+<!DOCTYPE html> <!-- Khai báo chuẩn HTML5 để trình duyệt hiểu và hiển thị đúng quy cách -->
+<html lang="vi"> <!-- Thẻ gốc của trang web, lang="vi" khai báo ngôn ngữ chính là tiếng Việt -->
 <head>
+    <!-- Khai báo bảng mã UTF-8 giúp trang web hiển thị đúng tiếng Việt có dấu -->
     <meta charset="UTF-8">
+
+    <!-- Thiết lập thẻ viewport giúp giao diện hiển thị co giãn tốt trên thiết bị di động -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tiêu đề của trang web hiển thị trên thẻ (tab) của trình duyệt -->
     <title>Bài tập 3.2</title>
+
+    <!-- Thẻ link kết nối tập tin HTML với file CSS bên ngoài (external stylesheet) tên là baitap3.2.css -->
     <link rel="stylesheet" href="baitap3.2.css"/>
 </head>
 
 <body>
-  
+    <!-- Thẻ <table> dùng để tạo bảng chứa nội dung bài thơ -->
     <table>
+        <!-- <tr> (Table Row): Tạo một hàng mới trong bảng -->
         <tr>
+            <!-- <td> (Table Data): Tạo một ô chứa dữ liệu trong hàng -->
             <td>
-    <h2 align ="center">QUÊ HƯƠNG</h2>
+                <!-- 
+                  thẻ <h2>: Thẻ tiêu đề cấp 2 (thường dùng cho tiêu đề bài thơ/bài viết)
+                  align="center": Thuộc tính căn giữa tiêu đề (lưu ý: HTML5 khuyến khích căn giữa bằng CSS)
+                -->
+                <h2 align="center">QUÊ HƯƠNG</h2>
 
-    <p class="doan1">Quê hương là chùm khế ngọt<br>
-        Cho con trèo hái mỗi ngày<br>
-        Quê hương là con diều biếc<br>
-        Tuổi thơ con thả trên đồng
-</p>
+                <!-- 
+                  thẻ <p>: Định dạng một đoạn văn bản (Paragraph)
+                  class="doan1": Đặt tên lớp "doan1" để áp dụng kiểu định dạng riêng từ file CSS
+                -->
+                <p class="doan1">
+                    Quê hương là chùm khế ngọt<br> <!-- Thẻ <br> dùng để ngắt dòng xuống hàng -->
+                    Cho con trèo hái mỗi ngày<br>
+                    Quê hương là con diều biếc<br>
+                    Tuổi thơ con thả trên đồng
+                </p>
 
-    <p class="doan2">
-        Quê hương là cầu tre nhỏ<br>
-        Mẹ về nón lá nghiêng che<br>
-        Quê hương mỗi người chỉ một<br>
-        Như là chỉ một mẹ thôi
-       
-    </p>
-</td>
-</tr>
-</table>
-</body>
-</html>
+                <!-- 
+                  class="doan2": Đặt tên lớp "doan2" để áp dụng kiểu định dạng khổ thơ thứ 2 từ file CSS
+                -->
+                <p class="doan2">
+                    Quê hương là cầu tre nhỏ<br>
+                    Mẹ về nón lá nghiêng che<br>
+                    Quê hương mỗi người chỉ một<br>
+                    Như là chỉ một mẹ thôi

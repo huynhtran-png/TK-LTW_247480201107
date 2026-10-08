@@ -1,70 +1,79 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+    <!-- Khai báo bảng mã ký tự UTF-8 để hiển thị đúng tiếng Việt -->
     <meta charset="UTF-8">
     <title>Bài tập 3.1</title>
 
     <style>
-     
+        /* CSS DÙNG ĐỂ ĐỊNH DẠNG CÁC THẺ VÀ CLASS */
+
+        /* Định dạng thẻ h1: Tiêu đề cấp 1 màu đỏ */
         h1 {
-            color: red;
+            color: red; /* Màu chữ */
         }
 
-        
+        /* Định dạng thẻ h2: Tiêu đề cấp 2 màu xanh dương */
         h2 {
-            color: blue;
+            color: blue; /* Màu chữ */
         }
 
-        
+        /* Định dạng thẻ h3: Tiêu đề cấp 3 màu xanh lá cây */
         h3 {
-            color: green;
+            color: green; /* Màu chữ */
         }
 
-       
+        /* Class .dong4: Áp dụng cho dòng chữ LỚP 13DTH1 */
         .dong4 {
-            font-family: "Times New Roman";
-            font-size: 14px;
-            font-weight: bold;
+            font-family: "Times New Roman"; /* Phông chữ */
+            font-size: 14px;              /* Kích thước chữ (14 pixel) */
+            font-weight: bold;             /* Độ đậm của chữ (in đậm) */
         }
 
-      
+        /* Class .dong5: Áp dụng cho dòng thông tin ngành và năm học */
         .dong5 {
-            font-family: "Times New Roman";
-            font-size: 12px;
-            font-weight: bold;
+            font-family: "Times New Roman"; /* Phông chữ */
+            font-size: 12px;              /* Kích thước chữ (12 pixel) */
+            font-weight: bold;             /* Độ đậm của chữ (in đậm) */
         }
 
-       
+        /* Class .nhanmanh: Dùng để tô nền và làm nổi bật văn bản */
         .nhanmanh {
-            background-color: yellow;
-            font-weight: bold;
+            background-color: yellow;     /* Màu nền của chữ (màu vàng) */
+            font-weight: bold;             /* Độ đậm của chữ (in đậm) */
         }
     </style>
 </head>
 
 <body>
-   <table border="2" cellspacing="0">
-<tr>
-    <td>
-    <h1>TRƯỜNG ĐẠI HỌC BẠC LIÊU</h1>
+    <!-- 
+      - border="2": Độ dày đường viền bảng là 2 pixel
+      - cellspacing="0": Khoảng cách giữa các viền ô trong bảng bằng 0
+    -->
+    <table border="2" cellspacing="0">
+        <tr>
+            <!-- <tr>: Tạo một hàng trong bảng (Table Row) -->
+            <td>
+                <!-- <td>: Tạo một ô trong bảng (Table Data) -->
+                
+                <h1>TRƯỜNG ĐẠI HỌC BẠC LIÊU</h1>
 
-    
-    <h2>KHOA CÔNG NGHỆ THÔNG TIN</h2>
+                <h2>KHOA CÔNG NGHỆ THÔNG TIN</h2>
 
-    
-    <h3>BỘ MÔN KHOA HỌC MÁY TÍNH</h3>
+                <h3>BỘ MÔN KHOA HỌC MÁY TÍNH</h3>
 
-  
-    <p class="dong4">LỚP 13DTH1</p>
+                <!-- Đoạn văn áp dụng kiểu dáng của class .dong4 -->
+                <p class="dong4">LỚP 13DTH1</p>
 
-    
-    <p class="dong5">
-        <span class="nhanmanh">
-            Ngành Công nghệ thông tin năm thứ 3
-        </span>
-    </p>
-    </td>
-</tr>
-</table>
+                <!-- Đoạn văn áp dụng kiểu dáng của class .dong5 -->
+                <p class="dong5">
+                    <!-- Thẻ <span> dùng để gom nhóm văn bản nhỏ bên trong và áp dụng class .nhanmanh -->
+                    <span class="nhanmanh">
+                        Ngành Công nghệ thông tin năm thứ 3
+                    </span>
+                </p>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>

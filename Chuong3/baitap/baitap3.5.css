@@ -1,31 +1,56 @@
+/* ==========================================
+   1. ĐỊNH DẠNG CHO TOÀN BỘ BẢNG (<table>)
+   ========================================== */
+   table {
+    border-collapse: collapse; /* Gộp viền đơn: Bỏ khoảng cách giữa đường viền của các ô kề nhau, làm đường viền liền nét và gọn hơn */
+}
 
-table{
-    border-collapse: collapse;
+/* ==========================================
+   2. TẠO HIỆU ỨNG GẠCH CHÂN CHO TIÊU ĐỀ (.gachduoi)
+   ========================================== */
+.gachduoi {
+    border-bottom: 2px solid black; /* Viền phía dưới: Tạo một nét gạch ngang bên dưới chữ
+                                       - 2px: Độ dày đường gạch là 2 pixel
+                                       - solid: Kiểu đường nét liền
+                                       - black: Đường gạch màu đen */
 
- }
-.gachduoi{
+    padding-bottom: 5px;            /* Khoảng cách khoảng trống: Đẩy khoảng cách từ chân chữ xuống đường gạch bên dưới là 5px (tránh gạch sát vào chữ) */
 
-    border-bottom: 2px solid black;
-    padding-bottom : 5px;
-    display :inline-block;
+    display: inline-block;          /* Kiểu hiển thị: Biến thẻ h1 thành dạng khối trên cùng 1 dòng, giúp đường gạch dưới chỉ dài vừa bằng độ rộng của dòng chữ thay vì trải dài ra hết chiều rộng màn hình */
 }
-.muc1{
-    font-family: Verdana;
-    color: black;
-    font-size: 13pt;
+
+/* ==========================================
+   3. ĐỊNH DẠNG CHO NĂM THỨ 1 (.muc1)
+   ========================================== */
+.muc1 {
+    font-family: Verdana; /* Phông chữ: Sử dụng kiểu chữ Verdana */
+    color: black;         /* Màu chữ: Màu đen */
+    font-size: 13pt;      /* Kích thước chữ: 13 pt (Point) */
 }
-.muc2{
-    font-family: Tahoma;
-    color: black;
-    font-size: 13pt;
+
+/* ==========================================
+   4. ĐỊNH DẠNG CHO NĂM THỨ 2 (.muc2)
+   ========================================== */
+.muc2 {
+    font-family: Tahoma;  /* Phông chữ: Sử dụng kiểu chữ Tahoma */
+    color: black;         /* Màu chữ: Màu đen */
+    font-size: 13pt;      /* Kích thước chữ: 13 pt (Point) */
 }
-.muc3{
-    font-family: "Times New Roman";
-    color: black;
-    font-size: 13pt;
+
+/* ==========================================
+   5. ĐỊNH DẠNG CHO NĂM THỨ 3 (.muc3)
+   ========================================== */
+.muc3 {
+    font-family: "Times New Roman"; /* Phông chữ: Sử dụng kiểu chữ Times New Roman */
+    color: black;                   /* Màu chữ: Màu đen */
+    font-size: 13pt;                /* Kích thước chữ: 13 pt (Point) */
 }
-.Thitotnghiep{
-    font-family: "Verdana";
-    color: red;
-    font-size: 13pt;
+
+/* ==========================================
+   6. ĐỊNH DẠNG CHO PHẦN THI TỐT NGHIỆP (.Thitotnghiep)
+   ========================================== */
+.Thitotnghiep {
+    font-family: "Verdana"; /* Phông chữ: Sử dụng kiểu chữ Verdana */
+    color: red;             /* Màu chữ: Màu đỏ */
+    font-size: 13pt;        /* Kích thước chữ: 13 pt (Point) */
 }

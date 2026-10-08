@@ -1,25 +1,39 @@
-
-h2 {
-    color: red;
-    text-align: center;
+/* ==========================================
+   1. ĐỊNH DẠNG CHO THẺ TIÊU ĐỀ H2 (<h2>)
+   ========================================== */
+   h2 {
+    color: red;           /* Màu chữ: Màu đỏ */
+    text-align: center;   /* Căn chỉnh văn bản: Căn giữa theo chiều ngang */
 }
 
-table{
-    border: 3px solid black;
-    
-}
-.doan1{
-    font-family: "Times New Roman";
-    font-size: 14px;
-    color: white;
-    background-color:#12bac3;
-    font-style: italic;
-}
-.doan2{
-    font-family: "Times New Roman";
-    font-size: 14px;
-    color: yellow;
-    background-color:brown;
-    font-style: italic;
+/* ==========================================
+   2. ĐỊNH DẠNG CHO BẢNG (<table>)
+   ========================================== */
+table {
+    border: 3px solid black;  /* Đường viền xung quanh bảng:
+                                 - 3px: Độ dày đường viền là 3 pixel
+                                 - solid: Kiểu đường viền nét liền
+                                 - black: Màu đường viền là màu đen */
 }
 
+/* ==========================================
+   3. ĐỊNH DẠNG CHO LỚP (CLASS) "doan1" (.doan1)
+   ========================================== */
+.doan1 {
+    font-family: "Times New Roman"; /* Phông chữ: Sử dụng kiểu chữ Times New Roman */
+    font-size: 14px;                /* Kích thước chữ: 14 pixel */
+    color: white;                   /* Màu chữ: Màu trắng */
+    background-color: #12bac3;      /* Màu nền: Màu xanh lam/ngọc (mã màu Hex: #12bac3) */
+    font-style: italic;             /* Kiểu chữ: Chữ in nghiêng */
+}
+
+/* ==========================================
+   4. ĐỊNH DẠNG CHO LỚP (CLASS) "doan2" (.doan2)
+   ========================================== */
+.doan2 {
+    font-family: "Times New Roman"; /* Phông chữ: Sử dụng kiểu chữ Times New Roman */
+    font-size: 14px;                /* Kích thước chữ: 14 pixel */
+    color: yellow;                  /* Màu chữ: Màu vàng */
+    background-color: brown;        /* Màu nền: Màu nâu */
+    font-style: italic;             /* Kiểu chữ: Chữ in nghiêng */
+}

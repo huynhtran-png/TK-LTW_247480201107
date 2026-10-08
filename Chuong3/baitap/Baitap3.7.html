@@ -1,32 +1,58 @@
+<!-- Khai báo chuẩn HTML5 giúp trình duyệt hiểu và hiển thị trang web đúng cách -->
 <!DOCTYPE html>
+
+<!-- Thẻ gốc bao bọc toàn bộ trang web; lang="vi" khai báo ngôn ngữ chính của trang là tiếng Việt -->
 <html lang="vi">
 
 <head>
+    <!-- Thẻ khai báo bảng mã ký tự UTF-8 để trang web hiển thị đúng tiếng Việt có dấu mà không bị lỗi font -->
     <meta charset="UTF-8">
+
+    <!-- Đặt tiêu đề cho trang web (hiển thị trên thẻ/tab của trình duyệt) -->
     <title>Trung tâm Công nghệ phần mềm</title>
+
+    <!-- Thẻ nhúng file CSS từ bên ngoài vào trang web
+         - rel="stylesheet": Xác định mối quan hệ là file kiểu dáng (CSS)
+         - href="baitap3.7.css": Đường dẫn trỏ tới file CSS thực tế -->
     <link rel="stylesheet" href="baitap3.7.css">
 </head>
 
 <body>
 
+    <!-- Khối bao ngoài cùng (wrapper) dùng để nhóm toàn bộ bố cục nội dung trang web -->
     <div class="khung">
 
-        
+        <!-- Khối chứa thanh điều hướng/menu chính của trang web -->
         <div class="menu">
+            <!-- Thẻ <a> tạo liên kết (link) chuyển hướng tới trang giới thiệu -->
             <a href="gioithieu.htm">Giới thiệu</a>
+
+            <!-- Liên kết tới trang tin tức -->
             <a href="tintuc.htm">Tin tức</a>
+
+            <!-- Liên kết tới trang đào tạo -->
             <a href="daotao.htm">Đào tạo</a>
+
+            <!-- Liên kết tới trang thời khóa biểu -->
             <a href="thoikhoabieu.htm">Thời khóa biểu</a>
+
+            <!-- Liên kết tới trang lịch thi -->
             <a href="lichthi.htm">Lịch thi</a>
+
+            <!-- Liên kết tới trang phòng chức năng -->
             <a href="phongchucnang.htm">Phòng chức năng</a>
+
+            <!-- Liên kết tới trang danh sách các khoa -->
             <a href="cackhoa.htm">Các Khoa</a>
         </div>
 
-       
+        <!-- Khối chứa nội dung thông tin chính của trang -->
         <div class="noidung">
 
+            <!-- Tiêu đề cấp 3 (thẻ h3) biểu thị tên đoạn hoặc tiêu đề nội dung -->
             <h3>Giới thiệu về Trung tâm Công nghệ phần mềm</h3>
 
+            <!-- Thẻ đoạn văn bản (p) chứa nội dung giới thiệu chi tiết -->
             <p>
                 Trung tâm được thành lập ngày 10/02/1999, trụ sở đặt tại
                 Khoa Kỹ thuật và Công nghệ - Trường Đại học Bạc Liêu,...

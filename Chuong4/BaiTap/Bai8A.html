@@ -1,0 +1,20 @@
+<HTML>
+    <TITLE>Mở trang web bằng hàm open của đối tượng window</TITLE>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <BODY>
+    
+    <script language="JavaScript">
+        var SoLuong;
+        SoLuong = prompt("Bạn hãy nhập vào một số để mở trang web: ","");
+    
+        switch (parseInt(SoLuong))
+        {
+            case 1: window.open("http://blu.edu.vn"); break;
+            case 2: window.open("http://ctu.edu.vn"); break;
+            case 3: window.open("https://vnexpress.net"); break;
+            default: window.open("https://meta.vn");
+        }
+    </script>
+    
+    </BODY>
+    </HTML>

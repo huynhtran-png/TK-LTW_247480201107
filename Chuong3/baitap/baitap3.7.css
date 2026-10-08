@@ -1,30 +1,39 @@
+/* Áp dụng kiểu dáng chung cho toàn bộ phần thân (body) của trang web */
 body {
-    font-family: Verdana;
-    font-size: 13px;
+    font-family: Verdana; /* Đổi phông chữ chính của trang thành Verdana */
+    font-size: 13px;      /* Đặt kích thước chữ mặc định là 13px */
 }
 
+/* Kiểu dáng cho thẻ chứa toàn bộ bố cục (class="khung") */
 .khung {
-    width: 100%;
-    display: flex;
-    border: 1px solid black;
+    width: 100%;          /* Chiều rộng chiếm 100% không gian màn hình/thẻ cha */
+    display: flex;        /* Bật mô hình Flexbox giúp sắp xếp menu và nội dung nằm ngang cạnh nhau */
+    border: 1px solid black; /* Tạo đường viền nét liền (solid), dày 1px, màu đen bao quanh khung */
 }
 
+/* Kiểu dáng cho khối danh mục bên trái (class="menu") */
 .menu {
-    width: 180px;
-    background-color: #333333;
+    width: 180px;                  /* Đặt chiều rộng cố định cho thanh menu là 180px */
+    background-color: #333333;     /* Đặt màu nền của menu là màu xám đen/màu than */
 }
-.menu a{
-    display: block;
-    color: while;
-    padding: 7px;
-    text-decoration: underline;
+
+/* Kiểu dáng áp dụng riêng cho các thẻ liên kết <a> nằm bên trong khối menu */
+.menu a {
+    display: block;                /* Biến thẻ <a> từ dạng dòng (inline) thành dạng khối (block) để chiếm trọn chiều rộng của menu và dễ bấm hơn */
+    color: while;                  /* Đặt màu chữ (LƯU Ý: Viết sai chính tả từ "white", trình duyệt sẽ không nhận màu trắng) */
+    padding: 7px;                  /* Tạo khoảng cách đệm 7px xung quanh chữ bên trong thẻ <a> */
+    text-decoration: underline;    /* Tạo đường gạch chân dưới chân chữ của liên kết */
 }
+
+/* Kiểu dáng cho khối nội dung chính bên phải (class="noidung") */
 .noidung {
-    flex:1;
-    width: 520px;
-    background-color: #d9e1e5;
-    padding: 10px;
+    flex: 1;                       /* Cho phép khối nội dung tự động co dãn chiếm hết khoảng trống còn lại trong Flexbox */
+    width: 520px;                  /* Đặt chiều rộng tham chiếu cho nội dung là 520px */
+    background-color: #d9e1e5;     /* Đặt màu nền là màu xanh xám nhạt */
+    padding: 10px;                 /* Tạo khoảng cách đệm 10px giữa viền và phần chữ bên trong */
 }
-.noidung h3{
-    margin-top: 0;
+
+/* Kiểu dáng áp dụng riêng cho thẻ tiêu đề <h3> nằm bên trong khối nội dung */
+.noidung h3 {
+    margin-top: 0;                 /* Xóa khoảng cách/lề phía trên của thẻ <h3> giúp tiêu đề sát top khối nội dung */
 }

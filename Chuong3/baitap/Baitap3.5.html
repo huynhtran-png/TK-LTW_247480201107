@@ -1,70 +1,128 @@
 <!DOCTYPE html>
+<!-- Khai báo chuẩn HTML5 cho trình duyệt nhận biết -->
+
 <html lang="vi">
+<!-- Thẻ gốc bao bọc toàn bộ trang web. Thuộc tính lang="vi" xác định ngôn ngữ chính là tiếng Việt -->
+
 <head>
     <meta charset="UTF-8">
+    <!-- Khai báo bảng mã ký tự UTF-8 giúp hiển thị đúng tiếng Việt có dấu -->
+
     <title>Chương trình đào tạo Công nghệ thông tin</title>
+    <!-- Tiêu đề của trang web (hiển thị trên thẻ/tab của trình duyệt) -->
+
     <link rel="stylesheet" href="baitap3.5.css"/>
+    <!-- Thẻ link: Tải và liên kết tập tin CSS bên ngoài (baitap3.5.css) vào trang HTML -->
 </head>
 
 <body>
-<table border="1" >
+    <!-- Khối thẻ chứa nội dung hiển thị trên trang web -->
 
-    <tr>
-        <th>
-            <p align ="left" >Chương trình đào tạo Công nghệ thông tin</p>
-        </th>
-    </tr>
+    <table border="1">
+    <!-- 
+        Thẻ table: Khởi tạo bảng dữ liệu
+        border="1": Tạo đường viền cho bảng với độ dày 1 pixel
+    -->
 
-    <tr>
-        <td>
-    
-    <h3>TRƯỜNG ĐẠI HỌC BẠC LIÊU</h3>
-    <h3>KHOA KỸ THUẬT VÀ CÔNG NGHỆ</h3>
+        <!-- ================= HÀNG 1: TIÊU ĐỀ KHU VỰC BẢNG ================= -->
+        <tr>
+        <!-- Thẻ tr (Table Row): Tạo hàng thứ nhất trong bảng -->
 
-    <h1 class ="gachduoi" >
-        CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH CÔNG NGHỆ THÔNG TIN</h1>
-        
+            <th>
+            <!-- Thẻ th (Table Header): Ô tiêu đề của bảng, mặc định chữ in đậm và nằm giữa -->
 
-    <ol >
-        <li class="muc1">
-            <b >Năm thứ 1</b>
-            <ul>
-                <li>Tin học căn bản</li>
-                <li>Lập trình căn bản</li>
-            </ul>
-        </li>
-
-        <li class="muc2">
-            <b>Năm thứ 2</b>
-            <ul>
-                <li>Cấu trúc dữ liệu và giải thuật</li>
-                <li>Lập trình C nâng cao</li>
-                <li>Lập trình quản lý</li>
-            </ul>
-        </li>
-
-        <li class="muc3">
-            <b>Năm thứ 3</b>
-            <ul>
-                <li>Phân tích thiết kế hệ thống</li>
-                <li>Cơ sở dữ liệu</li>
-            </ul>
-        </li>
-    </ol>
-
-    <h3><i><u>Thi tốt nghiệp:</u></i></h3>
-
-    <ul>
-        <li><b>Triết học</b></li>
-        <li><b>Toán rời rạc</b></li>
-        <li>
-            <b>Tin học cơ sở:</b>
-            <i>Cơ sở dữ liệu và cấu trúc dữ liệu</i>
-        </li>
-    </ul>
-    </td>
+                <p align="left">Chương trình đào tạo Công nghệ thông tin</p>
+                <!-- 
+                    Thẻ p: Thẻ đoạn văn (Paragraph)
+                    align="left": Thuộc tính căn chỉnh đoạn văn bản nằm về phía bên trái ô
+                -->
+            </th>
+            <!-- Kết thúc ô tiêu đề -->
         </tr>
+        <!-- Kết thúc hàng thứ nhất -->
 
-</table>
+        <!-- ================= HÀNG 2: NỘI DUNG CHÍNH CỦA CHƯƠNG TRÌNH ĐÀO TẠO ================= -->
+        <tr>
+        <!-- Tạo hàng thứ hai trong bảng -->
+
+            <td>
+            <!-- Thẻ td (Table Data): Ô chứa dữ liệu chính của bảng -->
+
+                <h3>TRƯỜNG ĐẠI HỌC BẠC LIÊU</h3>
+                <h3>KHOA KỸ THUẬT VÀ CÔNG NGHỆ</h3>
+                <!-- Thẻ h3: Thẻ tiêu đề cấp 3 (kích thước vừa phải, in đậm) -->
+
+                <h1 class="gachduoi">CHƯƠNG TRÌNH ĐÀO TẠO NGÀNH CÔNG NGHỆ THÔNG TIN</h1>
+                <!-- 
+                    Thẻ h1: Tiêu đề cấp 1 (lớn nhất)
+                    class="gachduoi": Gán lớp "gachduoi" để tùy biến kiểu dáng (vd: gạch chân) trong file CSS
+                -->
+
+                <!-- Danh sách các năm học (Danh sách có thứ tự đánh số 1, 2, 3...) -->
+                <ol>
+                    <!-- MỤC NĂM THỨ 1 -->
+                    <li class="muc1">
+                    <!-- Thẻ li (List Item): Mục thứ nhất trong danh sách. Gán class="muc1" để áp dụng CSS riêng -->
+                        
+                        <b>Năm thứ 1</b>
+                        <!-- Thẻ b: Làm chữ in đậm (Bold) -->
+
+                        <!-- Danh sách các môn học năm 1 (Danh sách không có thứ tự - dấu chấm tròn) -->
+                        <ul>
+                            <li>Tin học căn bản</li>
+                            <li>Lập trình căn bản</li>
+                        </ul>
+                    </li>
+
+                    <!-- MỤC NĂM THỨ 2 -->
+                    <li class="muc2">
+                    <!-- Mục thứ hai, gán class="muc2" -->
+                        
+                        <b>Năm thứ 2</b>
+                        <ul>
+                            <li>Cấu trúc dữ liệu và giải thuật</li>
+                            <li>Lập trình C nâng cao</li>
+                            <li>Lập trình quản lý</li>
+                        </ul>
+                    </li>
+
+                    <!-- MỤC NĂM THỨ 3 -->
+                    <li class="muc3">
+                    <!-- Mục thứ ba, gán class="muc3" -->
+                        
+                        <b>Năm thứ 3</b>
+                        <ul>
+                            <li>Phân tích thiết kế hệ thống</li>
+                            <li>Cơ sở dữ liệu</li>
+                        </ul>
+                    </li>
+                </ol>
+                <!-- Kết thúc danh sách có thứ tự các năm học -->
+
+                <h3><i><u>Thi tốt nghiệp:</u></i></h3>
+                <!-- 
+                    Thẻ h3: Tiêu đề cấp 3
+                    Thẻ i (Italic): Chữ in nghiêng
+                    Thẻ u (Underline): Chữ gạch chân
+                -->
+
+                <!-- Danh sách các môn thi tốt nghiệp (Danh sách không có thứ tự) -->
+                <ul>
+                    <li><b>Triết học</b></li>
+                    <li><b>Toán rời rạc</b></li>
+                    <li>
+                        <b>Tin học cơ sở:</b>
+                        <i>Cơ sở dữ liệu và cấu trúc dữ liệu</i> <!-- Chữ in nghiêng giải thích thêm -->
+                    </li>
+                </ul>
+
+            </td>
+            <!-- Kết thúc ô dữ liệu hàng 2 -->
+        </tr>
+        <!-- Kết thúc hàng thứ hai -->
+
+    </table>
+    <!-- Kết thúc bảng -->
+
 </body>
 </html>
