@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Hãy nhập hai số và click vào nút Tính tổng</h2>
+    
+    <!-- Ba hộp text: SoHang1, SoHang2 và KetQua -->
+    <INPUT type="text" id="SoHang1" name="SoHang1"> +
+    <INPUT type="text" id="SoHang2" name="SoHang2"> =
+    <INPUT type="text" id="KetQua" name="KetQua">
+    <br><br>
+    
+    <!-- Nút Tính tổng thực hiện thay đổi giá trị của ô KetQua -->
+    <INPUT type="button" value="Tính tổng" 
+    onClick="KetQua.value = parseFloat(SoHang1.value) + parseFloat(SoHang2.value)">
+</body>
+</html>

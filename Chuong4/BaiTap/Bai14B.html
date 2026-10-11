@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Trang web tính toán số học sử dụng Radio</h2>
+    
+    Số hạng 1: <INPUT type="text" id="SoHang1" name="SoHang1"><br><br>
+    Số hạng 2: <INPUT type="text" id="SoHang2" name="SoHang2"><br><br>
+    
+    <p><b>Chọn phép tính:</b></p>
+    <INPUT type="radio" name="phepTinh" value="cong" checked> Cộng (+)<br>
+    <INPUT type="radio" name="phepTinh" value="tru"> Trừ (-)<br>
+    <INPUT type="radio" name="phepTinh" value="nhan"> Nhân (*)<br>
+    <INPUT type="radio" name="phepTinh" value="chia"> Chia (/)<br><br>
+    
+    <!-- Nút Tính -->
+    <INPUT type="button" name="Tinh" value="Tính" onClick="tinhToan()"><br><br>
+    
+    Kết quả: <INPUT type="text" id="KetQua" name="KetQua">
+
+    <script>
+        function tinhToan() {
+            var a = parseFloat(SoHang1.value);
+            var b = parseFloat(SoHang2.value);
+            var kq = 0;
+            
+            // Kiểm tra xem người dùng đã nhập số chưa
+            if (isNaN(a) || isNaN(b)) {
+                KetQua.value = "Vui lòng nhập đủ số hợp lệ!";
+                return;
+            }
+            
+            // Lấy giá trị của mục radio đang được chọn
+            var radios = document.getElementsByName('phepTinh');
+            var selected = "";
+            for (var i = 0; i < radios.length; i++) {
+                if (radios[i].checked) {
+                    selected = radios[i].value;
+                    break;
+                }
+            }
+            
+            // Thực hiện tính toán dựa trên radio được chọn
+            switch (selected) {
+                case 'cong':
+                    kq = a + b;
+                    break;
+                case 'tru':
+                    kq = a - b;
+                    break;
+                case 'nhan':
+                    kq = a * b;
+                    break;
+                case 'chia':
+                    if (b !== 0) {
+                        kq = a / b;
+                    } else {
+                        KetQua.value = "Không thể chia cho 0";
+                        return;
+                    }
+                    break;
+            }
+            
+            // Ghi kết quả ra ô KetQua
+            KetQua.value = kq;
+        }
+    </script>
+</body>
+</html>

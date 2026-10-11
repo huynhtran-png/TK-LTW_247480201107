@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h2>Trang web tính toán số học (Cộng, Trừ, Nhân, Chia)</h2>
+    
+    <!-- Ba hộp text lưu trữ số hạng và kết quả -->
+    Số hạng 1: <INPUT type="text" id="SoHang1" name="SoHang1"><br><br>
+    Số hạng 2: <INPUT type="text" id="SoHang2" name="SoHang2"><br><br>
+    Kết quả:   <INPUT type="text" id="KetQua" name="KetQua"><br><br>
+    
+    <!-- 4 nút tính toán: Cộng, Trừ, Nhân, Chia -->
+    <INPUT type="button" name="Cong" value="Cộng" 
+    onClick="KetQua.value = parseFloat(SoHang1.value) + parseFloat(SoHang2.value);">
+
+    <INPUT type="button" name="Tru" value="Trừ" 
+    onClick="KetQua.value = parseFloat(SoHang1.value) - parseFloat(SoHang2.value);">
+
+    <INPUT type="button" name="Nhan" value="Nhân" 
+    onClick="KetQua.value = parseFloat(SoHang1.value) * parseFloat(SoHang2.value);">
+
+    <INPUT type="button" name="Chia" value="Chia" 
+    onClick="KetQua.value = parseFloat(SoHang2.value) != 0 ? (parseFloat(SoHang1.value) / parseFloat(SoHang2.value)) : 'Không chia được cho 0';">
+</BODY>   
+</body>
+</html>

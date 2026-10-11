@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="JavaScript">
+        function DoiMau()
+        {
+            // Thay đổi màu nền của tài liệu theo giá trị của phần tử Mau[span_5](start_span)[span_5](end_span)
+            document.bgColor = Mau.value; 
+            // Hoặc có thể viết: window.document.bgColor = Mau.value;[span_6](start_span)[span_6](end_span)
+        }
+    </script>
+</head>
+<body>
+    <p><b>Bạn hãy chọn màu nền:</b>[span_7](start_span)[span_7](end_span)</p>
+    
+    <!-- Danh sách lựa chọn với sự kiện onchange kích hoạt hàm DoiMau() -->
+    <Select name="Mau" id="Mau" onchange="DoiMau();">
+        <option value="red">Màu đỏ</option>
+        <option value="blue">Màu xanh</option>
+        <option value="brown">Màu nâu</option>
+        <option value="lavender">Màu xanh nhạt</option>
+    </select>
+</body>
+</html>

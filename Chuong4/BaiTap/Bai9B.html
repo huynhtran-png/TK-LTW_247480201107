@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 9B</title>
+</head>
+<body>
+    <script>
+        var Ds= new Array(100);
+        var soluong,i;
+        soluong= prompt(" Bạn cần nhập bao nhiêu thiết bị văn phòng : ");
+        for(i=0;i<soluong;i++){
+            Ds[i]=prompt(" Nhập vào tên các thiết bị văn phòng : ","");
+        }
+        document.write("<h1>Danh sách các thiết bị là 'Computer'</h1>");
+        document.write("<table border='1' cellspacing='0' cellpadding='5'>");
+        document.write("<tr><th>STT</th><th>Tên thiết bị</th></tr>");
+        var stt=1;
+        for(x in Ds){
+            if(Ds[x]=="Computer"){
+                document.write("<tr>");
+                document.write("<td align='center'>"+stt+"</td>");
+                document.write("<td>" + Ds[x] + "</td>");
+                document.write("</tr>");
+                stt++;
+            }
+        }
+        document.write("</table>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <SCRIPT language="JavaScript">
+        function CapNhat()
+        {
+            document.title = TieuDe.value; /* Thay đổi tiêu đề của trang Web */
+            document.bgColor = MauNen.value; /* Thay đổi màu nền của trang */
+            document.fgColor = MauChu.value; /* Thay đổi màu chữ của trang */
+            window.defaultStatus = TrangThai.value; /* Thay đổi dòng trạng thái của cửa sổ */
+        }
+    </SCRIPT>
+</head>
+<body>
+    <h2>Nhập vào các giá trị và nhấn nút Thay đổi</h2>
+    
+    Tiêu đề trang: <br>
+    <INPUT type="text" id="TieuDe" name="TieuDe" value="Tiêu đề mới"><br><br>
+    
+    Màu nền (ví dụ: blue, red, yellow): <br>
+    <INPUT type="text" id="MauNen" name="MauNen" value="Nhập màu vào đây (ví dụ blue)"><br><br>
+    
+    Màu chữ (ví dụ: white, black): <br>
+    <INPUT type="text" id="MauChu" name="MauChu" value="Nhập màu chữ vào đây (ví dụ white)"><br><br>
+    
+    Dòng trạng thái thanh status: <br>
+    <INPUT type="text" id="TrangThai" name="TrangThai" value="Nhập dòng trạng thái vào đây"><br><br>
+    
+    <!-- Nút Thay đổi gọi hàm CapNhat() -->
+    <INPUT type="button" id="ThayDoi" name="ThayDoi" value="Thay đổi" onClick="CapNhat();">
+</body>
+</html>
