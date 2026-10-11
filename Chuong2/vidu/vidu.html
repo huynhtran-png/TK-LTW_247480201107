@@ -1,38 +1,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Khai báo bộ mã UTF-8 để hiển thị tiếng Việt -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Giúp trang web hiển thị phù hợp trên điện thoại và máy tính -->
+
     <title>San pham Microsoft</title>
+    <!-- Tiêu đề hiển thị trên tab trình duyệt -->
 </head>
+
 <body>
+    <!-- H1: Tiêu đề lớn nhất, align="center" để căn giữa -->
     <h1 align="center"> <font face ="Arial"> SAN PHAM </font> </h1>
+
+    <!-- H3: Tiêu đề nhỏ hơn H1, align="left" để căn trái -->
     <h3 align="left"> <font face ="Arial"> SAN PHAM MICROSOFT</font> </h3>
+
+    <!-- OL: Danh sách có thứ tự, mặc định đánh số 1, 2, 3... -->
     <ol>
+        <!-- LI: Một mục trong danh sách -->
         <li><font face ="Arial" size ="2">MS Office2003</font></li>
     </ol>
+
+    <!-- UL: Danh sách không có thứ tự, mặc định dùng dấu chấm -->
     <ul>
         <li><font face ="Arial" size ="2">Microsoft Work 2003 </font></li>
+
+        <!-- size="3" là cỡ chữ lớn hơn size="2" -->
         <li><font face ="Arial" size ="3"> Micorsoft Excel 2003 </font></li>
     </ul>
+
+    <!-- OL: Tạo danh sách có thứ tự lần thứ hai -->
     <ol>
+        <!-- value="2": Bắt đầu đánh số mục này là số 2 -->
         <li value ="2">
                 Window XP, Window Sever 2000
         </li>
+
+        <!-- Mục tiếp theo tự tăng số thành 3 -->
         <li>
             Web sever: IIS (Internet information Sever )
         </li>
     </ol>
+
+    <!-- HR: Kẻ đường ngang -->
+    <!-- color="Blue": Màu xanh; size="1": Độ dày 1 -->
+    <!-- Lưu ý: Trong code gốc, size "1" thiếu dấu = -->
     <hr color = "Blue" size "1" align ="left">
+
+    <!-- P: Tạo một đoạn văn -->
+    <!-- U: Gạch chân; I: In nghiêng; B: In đậm; FONT: Định dạng màu chữ -->
     <p><u><i><b><font color="red"> Mot so lien ket:</font></b></u></i></p>
+
+    <!-- A: Tạo liên kết; href là địa chỉ trang web -->
+    <!-- IMG: Chèn hình ảnh; src là tên hoặc đường dẫn đến hình -->
+    <!-- Lưu ý: Thẻ IMG trong code gốc thiếu dấu > -->
     <p><a href=" http://www.echip.com.vn"><img border ="0" src="echip.jpg"</a>
+
+    <!-- Liên kết dạng chữ Echip -->
     <a href=" http://www.echip.com.vn">Echip</a> Tuan tin cong nghe thong tin</p>
+
+    <!-- Liên kết đến trang PCWorld Việt Nam -->
+    <!-- IMG dùng để hiển thị logo -->
+    <!-- width="260": Chiều rộng; height="64": Chiều cao -->
+    <!-- Lưu ý: Thẻ A mở trong code gốc chưa hoàn chỉnh -->
     <p><a href="http://www.pcworld.com.vn"
     <img border="0" src="logoPCW.gif" width="260" height="64"></a>
+
     <a href="http://www.pcworld.com.vn">PCWorld VietNam</a>
     </p>
-    <br>
+
+    <!-- BR: Xuống dòng -->
+    <br><!-- Ghi chú trong HTML: Nội dung nằm giữa <!-- và --> không hiển thị trên trang web -->
     <!Tao bang>
+
+    <!-- TABLE: Tạo bảng; border="1" tạo đường viền -->
     <table border ="1">
+
+        <!-- TR: Tạo một hàng -->
+        <!-- TH: Ô tiêu đề của bảng, thường hiển thị chữ đậm và căn giữa -->
         <tr>
             <th>
                 Ten hang
@@ -41,6 +88,8 @@
                 Gia
             </th>
         </tr>
+
+        <!-- Hàng dữ liệu thứ nhất; TD là ô dữ liệu thông thường -->
         <tr>
             <td>
                 Laptop Dell
@@ -49,6 +98,8 @@
                 12.000.000
             </td>
         </tr>
+
+        <!-- Hàng dữ liệu thứ hai -->
         <tr>
             <td>
                 Laptop Sony
@@ -56,7 +107,9 @@
             <td>
                 15.000.000
             </td>
-        
+        </tr>
+
+    <!-- TABLE: Thẻ đóng bảng -->
     </table>
 </body>
 </html>
