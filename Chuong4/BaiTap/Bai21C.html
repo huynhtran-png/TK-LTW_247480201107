@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="JavaScript">
+        function TinhToan() {
+            var a = parseFloat(So01.value);
+            var b = parseFloat(So02.value);
+            
+            // Kiểm tra tính hợp lệ của dữ liệu nhập vào
+            if (isNaN(a) || isNaN(b)) {
+                Ketqua.value = "Vui lòng nhập đủ số!";
+                return;
+            }
+            
+            // Lấy giá trị của mục đang chọn trong thẻ select
+            var phepToan = PhepTinh.value;
+            var kq = 0;
+            
+            // Thực hiện tính toán dựa theo lựa chọn trong select
+            switch (phepToan) {
+                case 'cong':
+                    kq = a + b;
+                    break;
+                case 'tru':
+                    kq = a - b;
+                    break;
+                case 'nhan':
+                    kq = a * b;
+                    break;
+                case 'chia':
+                    if (b !== 0) {
+                        kq = a / b;
+                    } else {
+                        Ketqua.value = "Không thể chia cho 0";
+                        return;
+                    }
+                    break;
+            }
+            
+            // Ghi kết quả vào ô Ketqua
+            Ketqua.value = kq;
+        }
+    </script>
+</head>
+<body style="font-family:arial">
+    <h2>Bài tập JavaScript 21C: Tính toán bằng thẻ Select Dropdown</h2>
+    
+    Số thứ nhất (So01): <input type="text" id="So01" name="So01"><br><br>
+    Số thứ hai (So02): <input type="text" id="So02" name="So02"><br><br>
+    
+    Chọn phép tính: 
+    <select id="PhepTinh" name="PhepTinh">
+        <option value="cong">Cộng (+)</option>
+        <option value="tru">Trừ (-)</option>
+        <option value="nhan">Nhân (*)</option>
+        <option value="chia">Chia (/)</option>
+    </select><br><br>
+    
+    <!-- Nút Tính kích hoạt hàm TinhToan() -->
+    <input type="button" id="Tinh" name="Tinh" value="Tính" onClick="TinhToan()"><br><br>
+    
+    Kết quả (Ketqua): <input type="text" id="Ketqua" name="Ketqua">
+    
+</body>
+</html>

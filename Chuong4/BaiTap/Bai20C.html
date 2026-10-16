@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="JavaScript">
+        function TinhLuong() {
+            // Lấy giá trị từ các ô nhập liệu và chuyển đổi sang dạng số
+            var hs = parseFloat(HeSo.value) || 0;
+            var lcs = parseFloat(LuongCoSo.value) || 0;
+            var nvl = parseInt(NamVaoLam.value) || 0;
+            
+            // 1. Tính lương cơ bản: HeSo x LuongCoSo
+            var lcb = hs * lcs;
+            LuongCoBan.value = lcb;
+            
+            // 2. Tính phụ cấp: 25% x LuongCoBan
+            var pc = 0.25 * lcb;
+            PhuCap.value = pc;
+            
+            // 3. Tính thâm niên: Năm hiện tại - NamVaoLam
+            var namHienTai = new Date().getFullYear();
+            if (nvl > 0 && nvl <= namHienTai) {
+                ThamNien.value = namHienTai - nvl;
+            } else {
+                ThamNien.value = 0;
+            }
+            
+            // 4. Tính thành tiền: LuongCoBan + PhuCap
+            ThanhTien.value = lcb + pc;
+        }
+    </script>
+</head>
+<body style="font-family:arial">
+    <h2>Bài tập JavaScript 20C: Tính lương nhân viên bằng nút bấm</h2>
+    
+    Họ tên nhân viên: <input type="text" id="HoTen" name="HoTen"><br><br>
+    Năm vào làm: <input type="text" id="NamVaoLam" name="NamVaoLam"><br><br>
+    Hệ số: <input type="text" id="HeSo" name="HeSo"><br><br>
+    Lương cơ sở: <input type="text" id="LuongCoSo" name="LuongCoSo"><br><br>
+    
+    <!-- Nút Tính lương gọi hàm TinhLuong() khi click -->
+    <input type="button" id="TinhLuong" name="TinhLuong" value="Tính lương" onClick="TinhLuong()"><br><br>
+    <hr>
+    
+    Lương cơ bản: <input type="text" id="LuongCoBan" name="LuongCoBan"><br><br>
+    Phụ cấp: <input type="text" id="PhuCap" name="PhuCap"><br><br>
+    Thâm niên: <input type="text" id="ThamNien" name="ThamNien"><br><br>
+    Thành tiền: <input type="text" id="ThanhTien" name="ThanhTien">
+    
+</body>
+</html>

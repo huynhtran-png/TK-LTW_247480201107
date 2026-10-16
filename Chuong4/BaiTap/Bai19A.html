@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 19A</title>
+</head>
+<body style="font-family:arial">
+    <h2>Bài tập 19A: Xử lý sự kiện di chuyển chuột</h2>
+    
+    <!-- Nút Gửi -->
+    <input type="button" value="Gửi" onMouseMove="document.getElementById('trangThai').innerText = 'Chuột đang ở trong nút Gửi';"><br><br>
+    
+    <!-- Textbox -->
+    <input type="text" name="HoTen" onMouseMove="document.getElementById('trangThai').innerText = 'Chuột đang ở trong textbox';"><br><br>
+    
+    <!-- Radio Nam & Nữ -->
+    <input type="radio" name="GioiTinh" onMouseMove="document.getElementById('trangThai').innerText = 'Chuột đang ở mục Nam';"> Nam
+    <input type="radio" name="GioiTinh" onMouseMove="document.getElementById('trangThai').innerText = 'Chuột đang ở mục Nữ';"> Nữ
+
+    <br><br>
+    <!-- Dòng hiển thị trạng thái thay thế cho thanh status bị chặn -->
+    <p><b>Trạng thái:</b> <span id="trangThai" style="color: blue; font-style: italic;">(Hãy di chuyển chuột vào các phần tử phía trên...)</span></p>
+</body>
+</html>

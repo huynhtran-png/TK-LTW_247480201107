@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Kiểm tra số lượng ký tự</title>
+    <script language="JavaScript">
+        function KiemTra()
+        {
+            // Kiểm tra nếu độ dài vượt quá 200 ký tự thì báo lỗi[span_5](start_span)[span_5](end_span)
+            if (NoiDung.value.length > 200) {
+                alert("Bạn đã gõ quá số ký tự cho phép!");
+            }
+            // Hiển thị số ký tự hiện tại vào trong textbox SoKyTu[span_6](start_span)[span_6](end_span)
+            SoKyTu.value = NoiDung.value.length; 
+        }
+    </script>
+</head>
+<body style="font-family:arial">
+    <h2>Bài tập JavaScript 18A: Đếm và giới hạn ký tự</h2>
+    
+    Số ký tự đã gõ: <input type="text" id="SoKyTu" name="SoKyTu"><BR><BR>
+    
+    <!-- Textarea với sự kiện onKeyUp kích hoạt hàm KiemTra() mỗi khi gõ phím[span_7](start_span)[span_7](end_span) -->
+    <textarea id="NoiDung" name="NoiDung" cols="50" rows="10" onKeyUp="KiemTra();"></textarea>
+</body>
+</html>

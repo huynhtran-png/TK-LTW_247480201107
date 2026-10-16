@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-family:arial">
+    <h2>Bài tập JavaScript 21A: Tính toán số học</h2>
+    
+    Số thứ nhất (So01): <input type="text" id="So01" name="So01"><br><br>
+    Số thứ hai (So02): <input type="text" id="So02" name="So02"><br><br>
+    Kết quả (Ketqua): <input type="text" id="Ketqua" name="Ketqua"><br><br>
+    
+    <!-- Các nút button thực hiện phép tính tương ứng -->
+    <input type="button" value="Cộng" onClick="Ketqua.value = parseFloat(So01.value) + parseFloat(So02.value);">
+    <input type="button" value="Trừ" onClick="Ketqua.value = parseFloat(So01.value) - parseFloat(So02.value);">
+    <input type="button" value="Nhân" onClick="Ketqua.value = parseFloat(So01.value) * parseFloat(So02.value);">
+    <input type="button" value="Chia" onClick="Ketqua.value = parseFloat(So02.value) != 0 ? (parseFloat(So01.value) / parseFloat(So02.value)) : 'Lỗi chia cho 0';">
+    
+</body>
+</html>

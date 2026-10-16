@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <TITLE>Bài tập JavaScript 17B</TITLE>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script language="JavaScript">
+        function DoiMau(mau) {
+            // Thay đổi màu nền của tài liệu theo giá trị màu được chọn
+            document.bgColor = mau;
+        }
+    </script>
+</HEAD>
+<BODY>
+    <p><b>Bạn hãy chọn màu nền:</b></p>
+    
+    <!-- Tạo các nút radio cho 4 màu: yellow, green, brown, magenta[span_5](start_span)[span_5](end_span) -->
+    <INPUT type="radio" name="Mau" value="yellow" onClick="DoiMau(this.value)"> Màu vàng (Yellow)<br>
+    <INPUT type="radio" name="Mau" value="green" onClick="DoiMau(this.value)"> Màu xanh lá (Green)<br>
+    <INPUT type="radio" name="Mau" value="brown" onClick="DoiMau(this.value)"> Màu nâu (Brown)<br>
+    <INPUT type="radio" name="Mau" value="magenta" onClick="DoiMau(this.value)"> Màu tím (Magenta)
+</BODY>
+</HTML>

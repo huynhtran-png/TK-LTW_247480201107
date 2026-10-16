@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .may-tinh {
+            width: 260px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .may-tinh input[type="text"] {
+            width: 95%;
+            height: 30px;
+            font-size: 18px;
+            text-align: right;
+            margin-bottom: 10px;
+        }
+        .may-tinh input[type="button"] {
+            width: 45px;
+            height: 35px;
+            font-size: 16px;
+            margin: 3px;
+            cursor: pointer;
+        }
+    </style>
+    <script language="JavaScript">
+        // Hàm thêm ký tự hoặc số vào ô kết quả
+        function Them(val) {
+            Ketqua.value += val;
+        }
+        
+        // Hàm xóa sạch ô kết quả (nút C)[span_4](start_span)[span_4](end_span)
+        function Xoa() {
+            Ketqua.value = "";
+        }
+        
+        // Hàm tính toán kết quả biểu thức
+        function TinhKetQua() {
+            try {
+                Ketqua.value = eval(Ketqua.value);
+            } catch (err) {
+                Ketqua.value = "Lỗi biểu thức";
+            }
+        }
+    </script>
+</head>
+<body style="font-family:arial">
+    <h2>Bài tập JavaScript 22A: Máy tính đơn giản</h2>
+    
+    <div class="may-tinh">
+        <!-- Textbox Ketqua[span_5](start_span)[span_5](end_span) -->
+        <input type="text" id="Ketqua" name="Ketqua"><br>
+        
+        <!-- Hàng nút số 0 -> 4[span_6](start_span)[span_6](end_span) -->
+        <input type="button" value="0" onClick="Them('0')">
+        <input type="button" value="1" onClick="Them('1')">
+        <input type="button" value="2" onClick="Them('2')">
+        <input type="button" value="3" onClick="Them('3')">
+        <input type="button" value="4" onClick="Them('4')"><br>
+        
+        <!-- Hàng nút số 5 -> 9[span_7](start_span)[span_7](end_span) -->
+        <input type="button" value="5" onClick="Them('5')">
+        <input type="button" value="6" onClick="Them('6')">
+        <input type="button" value="7" onClick="Them('7')">
+        <input type="button" value="8" onClick="Them('8')">
+        <input type="button" value="9" onClick="Them('9')"><br>
+        
+        <!-- Hàng nút phép toán +, -, *, /, =[span_8](start_span)[span_8](end_span) -->
+        <input type="button" value="+" onClick="Them('+')">
+        <input type="button" value="-" onClick="Them('-')">
+        <input type="button" value="*" onClick="Them('*')">
+        <input type="button" value="/" onClick="Them('/')">
+        <input type="button" value="=" onClick="TinhKetQua()"><br>
+        
+        <!-- Nút C (Xóa)[span_9](start_span)[span_9](end_span) -->
+        <input type="button" value="C" onClick="Xoa()" style="width: 98%;">
+    </div>
+    
+</body>
+</html>
